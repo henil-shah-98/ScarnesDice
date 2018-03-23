@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.henil.scarnesdice.MainActivity">
+
+    <TextView
+        android:id="@+id/uscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Your score :"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/uscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/dice1" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hold"
+        android:layout_alignStart="@+id/hold"
+        android:layout_below="@+id/ctscore"
+        android:layout_marginTop="80dp"
+        android:text="roll"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="hold"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="reset"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usvalue"
+        android:layout_alignBottom="@+id/usvalue"
+        android:layout_alignLeft="@+id/ctscore"
+        android:layout_alignStart="@+id/ctscore"
+        android:text="Computer score :"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/utscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uscore"
+        android:layout_alignStart="@+id/uscore"
+        android:layout_centerVertical="true"
+        android:text="Your turn score :"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ctscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/utsvalue"
+        android:layout_alignBottom="@+id/utsvalue"
+        android:layout_alignLeft="@+id/roll"
+        android:layout_alignStart="@+id/roll"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:text="Computer turn score :"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/usvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uscore"
+        android:layout_toEndOf="@+id/uscore"
+        android:layout_toRightOf="@+id/uscore"
+        android:text="0"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/csvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cscore"
+        android:layout_toEndOf="@+id/cscore"
+        android:layout_toRightOf="@+id/cscore"
+        android:text="0"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/utsvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/utscore"
+        android:layout_toEndOf="@+id/utscore"
+        android:layout_toRightOf="@+id/utscore"
+        android:text="0"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ctsvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ctscore"
+        android:layout_toEndOf="@+id/ctscore"
+        android:layout_toRightOf="@+id/ctscore"
+        android:text="0"
+        android:textSize="15sp" />
+
+</RelativeLayout>
